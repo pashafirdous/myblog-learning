@@ -6,19 +6,20 @@
 
 :root {
   --primary-bg: #ffffff;
-  --secondary-bg: #f7f7f7;
-  --text-primary: #242424;
-  --text-secondary: #757575;
-  --border-color: #e6e6e6;
-  --accent-color: #1a8917;
-  --hover-color: rgba(0, 0, 0, 0.05);
+  --secondary-bg: #f9f9f9;
+  --text-primary: #292929;
+  --text-secondary: #6B6B6B;
+  --border-color: #F2F2F2;
+  --accent-color: #1a1a4d;
+  --navy-blue: #191919;
+  --medium-navy: #0c0c2b;
+  --hover-color: rgba(25, 25, 77, 0.08);
 }
 
 body {
   margin: 0;
-  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--primary-bg);
@@ -27,10 +28,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lora', Georgia, serif;
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: 0.5em;
+  color: var(--navy-blue);
 }
 
 a {

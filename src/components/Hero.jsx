@@ -5,9 +5,9 @@ function Hero() {
     <section className="hero">
       <div className="hero-container">
         <div className="hero-content">
-          <h1 className="hero-title">Stay curious.</h1>
+          <h1 className="hero-title">What I'm thinking today</h1>
           <p className="hero-subtitle">
-            Discover stories, thinking, and expertise from writers on any topic.
+            Discover my thoughts, ideas, and insights on various topics. Stay curious and explore.
           </p>
           <button className="hero-btn">Start reading</button>
         </div>
