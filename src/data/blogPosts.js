@@ -27,7 +27,7 @@ export const blogPosts = [
       <p>If you're starting your cloud journey, my advice: invest in understanding the fundamentals, don't skip the planning phase, and remember that migration is a journey, not a destination.</p>
     `,
     author: "Mohammed Firdouse Pasha",
-    authorAvatar: "https://media.licdn.com/dms/image/v2/C4D03AQFw2T0qNJEblQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516841212260?e=1770249600&v=beta&t=ao8nFjCMu2g4jIlmD6ahj2SmAPBcG_4algK2PD-6M2k",
+    authorAvatar: "/images/profile.jpg",
     date: "Jan 19, 2026",
     readingTime: 6,
     tag: "Cloud Migration",
@@ -66,7 +66,7 @@ export const blogPosts = [
       <p>If you're in infrastructure or DevOps and haven't learned Kubernetes yet, now is the time. It's not just a trend—it's becoming the foundation of modern infrastructure.</p>
     `,
     author: "Mohammed Firdouse Pasha",
-    authorAvatar: "https://media.licdn.com/dms/image/v2/C4D03AQFw2T0qNJEblQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516841212260?e=1770249600&v=beta&t=ao8nFjCMu2g4jIlmD6ahj2SmAPBcG_4algK2PD-6M2k",
+    authorAvatar: "/images/profile.jpg",
     date: "Jan 17, 2026",
     readingTime: 7,
     tag: "Kubernetes",
@@ -108,7 +108,7 @@ export const blogPosts = [
       <p>The future is declarative, version-controlled infrastructure. If you're still managing infrastructure manually, you're accumulating technical debt that will become increasingly expensive to address.</p>
     `,
     author: "Mohammed Firdouse Pasha",
-    authorAvatar: "https://media.licdn.com/dms/image/v2/C4D03AQFw2T0qNJEblQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516841212260?e=1770249600&v=beta&t=ao8nFjCMu2g4jIlmD6ahj2SmAPBcG_4algK2PD-6M2k",
+    authorAvatar: "/images/profile.jpg",
     date: "Jan 15, 2026",
     readingTime: 6,
     tag: "DevOps",
@@ -151,7 +151,7 @@ export const blogPosts = [
       <p>Security in the cloud isn't harder than traditional security—it's just different. Understanding those differences and adapting your approach is essential for protecting modern infrastructure.</p>
     `,
     author: "Mohammed Firdouse Pasha",
-    authorAvatar: "https://media.licdn.com/dms/image/v2/C4D03AQFw2T0qNJEblQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516841212260?e=1770249600&v=beta&t=ao8nFjCMu2g4jIlmD6ahj2SmAPBcG_4algK2PD-6M2k",
+    authorAvatar: "/images/profile.jpg",
     date: "Jan 13, 2026",
     readingTime: 7,
     tag: "Cybersecurity",
