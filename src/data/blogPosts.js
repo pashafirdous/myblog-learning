@@ -2,6 +2,10 @@ import { convertMarkdownToHtml } from '../utils/markdown.js';
 
 // Import markdown files
 import cisspRoadmapMd from './posts/cissp-roadmap.md?raw';
+import cloudMigrationMd from './posts/cloud-migration-journey.md?raw';
+import kubernetesMd from './posts/kubernetes-changed-everything.md?raw';
+import iacMd from './posts/infrastructure-as-code.md?raw';
+import cybersecurityMd from './posts/cybersecurity-cloud-era.md?raw';
 
 export const blogPosts = [
   {
@@ -281,7 +285,11 @@ export const blogPosts = [
     excerpt: "Sharing my experiences and key insights from migrating hundreds of workloads across AWS, Azure, and Google Cloud over the past decade and a half.",
     pdfUrl: null,
     externalLinks: [],
-    content: `
+    markdown: cloudMigrationMd,
+    get content() {
+      return convertMarkdownToHtml(this.markdown);
+    },
+    _oldContent: `
       <p>Over the past 16+ years, I've been privileged to work on cloud migration projects across the US, Europe, and the Middle East. From my early days at Thomson Reuters to leading complex transformations at Deloitte, I've learned that successful cloud migrations are as much about people and processes as they are about technology.</p>
       
       <h2>The Early Days: Learning the Hard Way</h2>
