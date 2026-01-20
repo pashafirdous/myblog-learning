@@ -323,7 +323,11 @@ export const blogPosts = [
     excerpt: "My hands-on experience with container orchestration and why earning CKA and CKAD certifications transformed how I approach infrastructure.",
     pdfUrl: null,
     externalLinks: [],
-    content: `
+    markdown: kubernetesMd,
+    get content() {
+      return convertMarkdownToHtml(this.markdown);
+    },
+    _oldContent: `
       <p>When I first obtained my CKA (Certified Kubernetes Administrator) and CKAD (Certified Kubernetes Application Developer) certifications, I thought I was just learning another technology. I was wrong. Kubernetes fundamentally changed how I think about infrastructure, scalability, and application deployment.</p>
       
       <h2>The Problem Kubernetes Solves</h2>
@@ -362,7 +366,11 @@ export const blogPosts = [
     excerpt: "How IaC transformed my approach to infrastructure management and why every organization should adopt it.",
     pdfUrl: null,
     externalLinks: [],
-    content: `
+    markdown: iacMd,
+    get content() {
+      return convertMarkdownToHtml(this.markdown);
+    },
+    _oldContent: `
       <p>I've managed infrastructure manually, through scripts, and now through Infrastructure as Code (IaC). There's no going back. IaC isn't just about automation—it's about treating infrastructure with the same rigor we apply to application code.</p>
       
       <h2>My IaC Journey</h2>
@@ -404,7 +412,11 @@ export const blogPosts = [
     excerpt: "Leading cybersecurity initiatives has taught me that cloud security requires a fundamentally different mindset than traditional datacenter security.",
     pdfUrl: null,
     externalLinks: [],
-    content: `
+    markdown: cybersecurityMd,
+    get content() {
+      return convertMarkdownToHtml(this.markdown);
+    },
+    _oldContent: `
       <p>As a Cyber Security Lead with my CISSP certification, I've seen security evolve dramatically. The shift to cloud computing hasn't just changed where we run applications—it's fundamentally altered how we must think about security.</p>
       
       <h2>The Shared Responsibility Model</h2>
