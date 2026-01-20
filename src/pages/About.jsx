@@ -1,6 +1,10 @@
 import './About.css'
+import { convertMarkdownToHtml } from '../utils/markdown.js'
+import aboutMd from '../data/about.md?raw'
 
 function About() {
+  const aboutContent = convertMarkdownToHtml(aboutMd);
+  
   return (
     <div className="about-page">
       <div className="about-hero">
@@ -32,6 +36,9 @@ function About() {
 
       <div className="about-content">
         <div className="content-container">
+          <div className="markdown-content" dangerouslySetInnerHTML={{ __html: aboutContent }} />
+        </div>
+        <div className="content-container-old" style={{display: 'none'}}>
           <section className="about-section">
             <h2>About Me</h2>
             <p className="intro-text">
