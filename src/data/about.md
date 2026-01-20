@@ -4,6 +4,12 @@
 
 *Ex-Deloitte | Ex-VMware | Ex-Thomson Reuters*
 
+<div style="text-align: center; margin: 30px 0;">
+  <a href="/Mohammed_Firdouse_Pasha_Profile.html" target="_blank" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #1a1a4d 0%, #2c5282 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 12px rgba(26, 26, 77, 0.3); transition: all 0.3s;">
+    📄 Download Professional Profile (PDF Format)
+  </a>
+</div>
+
 ---
 
 ## About Me
@@ -30,7 +36,37 @@ Leading cybersecurity initiatives and strategies for enterprise-level security i
 **Deloitte Consulting**  
 *Jun 2021 - Jul 2024 · 3 yrs 2 mos*
 
-Led cloud transformation projects, architecture design, and strategic technology implementations for enterprise clients.
+Led cloud transformation projects, architecture design, and strategic technology implementations for enterprise clients. Served as Delivery Manager and Migration SME for multiple large-scale engagements.
+
+#### **Key Projects:**
+
+**US Largest Insurance Client – Core Migration**  
+*Role: Delivery Manager & Migration SME*
+
+- Led one of Deloitte's largest cloud migration programs, successfully migrating **over 150 applications to AWS** in just 16 months
+- Implemented Migration Factory model across multiple application archetypes for rapid, consistent migrations
+- Served as SME for AWS cloud migration and Kubernetes containerization with infrastructure architecture development
+- Ensured seamless integration of cloud-native technologies into the client's digital transformation journey
+- Collaborated with FinOps team to maximize benefits of AWS Migration Acceleration Program (MAP)
+- Implemented DevOps best practices and optimized application performance across multiple business units
+
+**Large Technology & Media Client – AO Operators**  
+*Role: Development Manager & Kubernetes SME*
+
+- Developed Kubernetes operators for **12 critical applications**, standardizing the client's cloud migration strategy
+- Led DevOps standardization efforts utilizing Helm templates for streamlined integration with private Operator Hub
+- Implemented open-source operators and established automated CI/CD models for rapid cloud adoption
+- Integrated Kubernetes operators with client-owned monitoring and observability applications
+- Enabled efficient, scalable deployments through operator pattern implementation
+
+**US Healthcare Client – Converge Health**  
+*Role: AWS Lead*
+
+- Led development of AWS infrastructure supporting Converge Health's ML application platform
+- Designed and implemented Infrastructure as Code using CloudFormation templates for automated deployment
+- Architected AWS infrastructure for comprehensive log and metrics collection
+- Successfully deployed and managed multiple AWS services integrated with Converge Health ETL pipeline
+- Enabled ML model training through efficient data transformation and feeding mechanisms
 
 ---
 
@@ -38,7 +74,7 @@ Led cloud transformation projects, architecture design, and strategic technology
 **Deloitte Consulting · Bangalore**  
 *Nov 2018 - Jun 2021 · 2 yrs 8 mos*
 
-Delivered cloud migration strategies, infrastructure optimization, and DevOps implementations.
+Delivered cloud migration strategies, infrastructure optimization, and DevOps implementations for diverse clients across industries.
 
 ---
 
