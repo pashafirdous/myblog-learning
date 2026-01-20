@@ -27,7 +27,7 @@ export const blogPosts = [
       <p>If you're starting your cloud journey, my advice: invest in understanding the fundamentals, don't skip the planning phase, and remember that migration is a journey, not a destination.</p>
     `,
     author: "Mohammed Firdouse Pasha",
-    authorAvatar: "https://i.pravatar.cc/150?img=12",
+    authorAvatar: "https://media.licdn.com/dms/image/v2/C4D03AQFw2T0qNJEblQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516841212260?e=1770249600&v=beta&t=ao8nFjCMu2g4jIlmD6ahj2SmAPBcG_4algK2PD-6M2k",
     date: "Jan 19, 2026",
     readingTime: 6,
     tag: "Cloud Migration",
