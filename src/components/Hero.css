@@ -1,6 +1,6 @@
 .hero {
-  background-color: #f7f4ed;
-  border-bottom: 1px solid var(--border-color);
+  background: linear-gradient(135deg, #fffef9 0%, #f7f4ed 50%, #fef8f0 100%);
+  border-bottom: 1px solid #e8e5dd;
 }
 
 .hero-container {

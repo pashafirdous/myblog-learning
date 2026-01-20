@@ -9,6 +9,10 @@ function Home() {
       <Hero />
       <main className="main-content">
         <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">Recent Thoughts & Insights</h2>
+            <p className="section-subtitle">Exploring cloud architecture, cybersecurity, DevOps, and the technologies shaping modern infrastructure</p>
+          </div>
           <div className="blog-grid">
             {blogPosts.map(post => (
               <BlogCard key={post.id} post={post} />
