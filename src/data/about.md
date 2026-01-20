@@ -14,7 +14,7 @@
 
 ## Executive Summary
 
-**Digital Transformation Leader** with **16+ years** of distinguished experience driving enterprise-wide cloud transformations, modernization initiatives, and security strategies across Fortune 500 companies in the **US, Europe, and Middle East**. Proven track record of delivering complex, large-scale migrations involving **150+ applications**, architecting Kubernetes-native platforms, and implementing zero-trust security frameworks.
+**Digital Transformation Leader** with **16+ years** of distinguished experience driving enterprise-wide cloud transformations, modernization initiatives, and security strategies across Fortune 500 companies and marke leaders in the **US, Europe, and Middle East**. Proven track record of delivering complex, large-scale cloud migrations,  architecting Kubernetes-native platforms, and implementing zero-trust security frameworks.
 
 As a **CISSP-certified Cyber Security Lead** and **multi-cloud architect** (AWS Solutions Architect Professional, Google Cloud Professional Architect), I bring a unique combination of deep technical expertise, strategic vision, and hands-on execution capability. My approach integrates security-by-design principles with modern DevOps practices, Infrastructure as Code, and platform-agnostic solutions that deliver measurable business outcomes.
 
@@ -24,23 +24,22 @@ As a **CISSP-certified Cyber Security Lead** and **multi-cloud architect** (AWS 
 - **Security Excellence:** CISSP-certified with proven expertise in zero-trust architecture and cloud security
 - **Business Impact:** Delivered 30-40% cost optimizations, reduced security incidents, accelerated time-to-market
 - **Global Experience:** Managed multi-geo teams and projects across US, Europe, Middle East markets
+- **Proven Project Management** 
 
 ---
 
 ## Professional Experience
 
-### Cyber Security Lead
-**Private Company · Saudi Arabia**  
+### Cyber Security Technology Lead
+**Salam · Saudi Arabia**  
 *Aug 2024 - Present · Current Role*
 
-**Leading enterprise-wide cybersecurity transformation** for a major organization, architecting and implementing comprehensive security frameworks that protect critical digital assets across cloud and on-premises environments.
+**Leading enterprise-wide cybersecurity transformation** for a major organization, architecting and implementing comprehensive security frameworks and solutions that protect critical digital assets supporting the growth vision and strategy of the organization.
 
 **Strategic Initiatives:**
-- Architecting and deploying **zero-trust security architecture** across multi-cloud infrastructure
-- Leading comprehensive security assessments and vulnerability management programs
-- Establishing 24/7 Security Operations Center (SOC) with automated threat detection and response
-- Implementing cloud-native security controls across AWS, Azure, and GCP environments
-- Driving security compliance initiatives (ISO 27001, SOC 2, regulatory frameworks)
+- Architecting and deploying PAM solution with **zero-trust security architecture** with high resiliency
+- Leading comprehensive security assessments ato improve organizational BCP readiness
+- Enable enterprise projects to adhere security best practiec and align with NCA and CIST frameworks
 - **Impact:** Enhanced security posture, reduced incident response time, achieved compliance certifications
 
 ---
@@ -53,8 +52,8 @@ As a **CISSP-certified Cyber Security Lead** and **multi-cloud architect** (AWS 
 
 **Leadership Impact:**
 - Led **$50M+ transformation programs** from strategy through execution
-- Managed cross-functional teams of 15-30+ technical resources
-- Served as trusted advisor to C-level executives on cloud strategy
+- Managed cross-functional teams of 30+ technical resources
+- Served as trusted advisor to MD/SM-level executives on cloud strategy and transformation
 - Delivered measurable business outcomes: 30-40% cost reduction, improved agility, enhanced security
 
 #### **Flagship Projects:**
