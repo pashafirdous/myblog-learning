@@ -84,8 +84,8 @@ function BlogPost() {
         <div className="author-card">
           <img src={post.authorAvatar} alt={post.author} className="author-card-avatar" />
           <h3 className="author-card-name">{post.author}</h3>
-          <p className="author-card-bio">Writer and developer passionate about technology and design.</p>
-          <button className="author-follow-btn">Follow</button>
+          <p className="author-card-bio">Technology Strategy & Transformation Leader | 16+ years in Cloud, DevOps, and Cybersecurity | CISSP, AWS, GCP Certified</p>
+          <a href="https://linkedin.com/in/pashafirdous" target="_blank" rel="noopener noreferrer" className="author-follow-btn">Connect on LinkedIn</a>
         </div>
       </div>
     </div>
