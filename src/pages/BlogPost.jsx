@@ -46,6 +46,35 @@ function BlogPost() {
 
         <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: post.content }} />
 
+        {post.pdfUrl && (
+          <div className="pdf-attachment">
+            <div className="pdf-header">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+              <h3>Download Resource</h3>
+            </div>
+            <p>Get the full PDF version of this article with additional resources.</p>
+            <a href={post.pdfUrl} target="_blank" rel="noopener noreferrer" className="pdf-download-btn">
+              Download PDF
+            </a>
+          </div>
+        )}
+
+        {post.externalLinks && post.externalLinks.length > 0 && (
+          <div className="external-links">
+            <h3>Related Resources</h3>
+            <ul>
+              {post.externalLinks.map((link, index) => (
+                <li key={index}>
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">{link.title}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         <div className="blog-post-footer">
           <div className="post-tag-large">{post.tag}</div>
         </div>

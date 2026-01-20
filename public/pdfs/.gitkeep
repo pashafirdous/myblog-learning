@@ -1,0 +1,6 @@
+# PDF Storage Folder
+
+Place your PDF files here. They will be accessible at `/pdfs/your-file.pdf`
+
+Example: If you add `my-guide.pdf` here, reference it in blogPosts.js as:
+pdfUrl: "/pdfs/my-guide.pdf"

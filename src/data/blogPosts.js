@@ -3,6 +3,8 @@ export const blogPosts = [
     id: 1,
     title: "Zero Trust Architecture: The Future of Cybersecurity",
     excerpt: "Explore how Zero Trust security models are revolutionizing enterprise protection by eliminating implicit trust and verifying every access request.",
+    pdfUrl: null, // Add PDF URL here when you have one (e.g., "/pdfs/zero-trust.pdf" or Google Drive link)
+    externalLinks: [], // Add related links here
     content: `
       <p>In today's threat landscape, the traditional perimeter-based security model is no longer sufficient. Zero Trust Architecture (ZTA) represents a paradigm shift in how organizations approach cybersecurity, operating on the principle of "never trust, always verify."</p>
       

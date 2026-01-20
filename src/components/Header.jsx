@@ -6,13 +6,12 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo">
-          <h1>My Blog</h1>
+          <h1>Mohammed Firdouse Pasha</h1>
         </Link>
         <nav className="nav">
           <Link to="/" className="nav-link">Home</Link>
-          <Link to="/" className="nav-link">About</Link>
-          <Link to="/" className="nav-link">Topics</Link>
-          <button className="btn-primary">Get Started</button>
+          <Link to="/about" className="nav-link">About</Link>
+          <a href="https://linkedin.com/in/pashafirdous" target="_blank" rel="noopener noreferrer" className="btn-primary">Connect</a>
         </nav>
       </div>
     </header>
