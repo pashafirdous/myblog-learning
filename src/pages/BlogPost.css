@@ -246,6 +246,7 @@
 }
 
 .author-follow-btn {
+  display: block;
   width: 100%;
   background-color: var(--accent-color);
   color: #fff;
@@ -253,11 +254,13 @@
   border-radius: 99px;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
+  text-decoration: none;
   transition: all 0.2s;
 }
 
 .author-follow-btn:hover {
-  background-color: #156d13;
+  background-color: var(--navy-blue);
   transform: translateY(-1px);
 }
 
