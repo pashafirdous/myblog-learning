@@ -1,3 +1,8 @@
+import { convertMarkdownToHtml } from '../utils/markdown.js';
+
+// Import markdown files
+import cisspRoadmapMd from './posts/cissp-roadmap.md?raw';
+
 export const blogPosts = [
   {
     id: 1,
@@ -8,7 +13,11 @@ export const blogPosts = [
       { title: "(ISC)² Official CISSP Page", url: "https://www.isc2.org/Certifications/CISSP" },
       { title: "CISSP Exam Outline", url: "https://www.isc2.org/certifications/cissp/cissp-certification-exam-outline" }
     ],
-    content: `
+    markdown: cisspRoadmapMd, // Use markdown file
+    get content() {
+      return convertMarkdownToHtml(this.markdown);
+    },
+    _oldContent: `
       <p>Earning my CISSP certification was one of the most challenging yet rewarding professional achievements. As a Cyber Security Lead with over 16 years of experience, I wanted to formalize my knowledge and validate my expertise. Here's the strategic approach I took to pass the CISSP exam in 4 months.</p>
       
       <h2>Understanding the CISSP: What You're Getting Into</h2>
@@ -340,7 +349,7 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=800&h=600&fit=crop"
   },
   {
-    id: 3,
+    id: 4,
     title: "Infrastructure as Code: Why I'm All In",
     excerpt: "How IaC transformed my approach to infrastructure management and why every organization should adopt it.",
     pdfUrl: null,
@@ -382,7 +391,7 @@ export const blogPosts = [
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop"
   },
   {
-    id: 4,
+    id: 5,
     title: "Cybersecurity in the Cloud Era: What's Different",
     excerpt: "Leading cybersecurity initiatives has taught me that cloud security requires a fundamentally different mindset than traditional datacenter security.",
     pdfUrl: null,
