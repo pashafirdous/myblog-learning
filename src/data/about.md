@@ -5,8 +5,8 @@
 *Ex-Deloitte | Ex-VMware | Ex-Thomson Reuters*
 
 <div style="text-align: center; margin: 30px 0;">
-  <a href="/Mohammed_Firdouse_Pasha_Profile.html" target="_blank" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #1a1a4d 0%, #2c5282 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 12px rgba(26, 26, 77, 0.3); transition: all 0.3s;">
-    📄 Download Professional Profile (PDF Format)
+  <a href="/Mohammed_Firdouse_Pasha_Resume.html" target="_blank" style="display: inline-block; padding: 12px 32px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 25px; font-weight: 600; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3); transition: all 0.3s;">
+    📄 Download Modern Resume (PDF Format)
   </a>
 </div>
 

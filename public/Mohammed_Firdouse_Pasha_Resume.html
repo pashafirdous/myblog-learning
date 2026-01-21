@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Firdouse Pasha - Resume</title>
+    <style>
+        @page {
+            margin: 0;
+            size: A4;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+        
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            border: 5px solid rgba(255,255,255,0.3);
+            overflow: hidden;
+            background: #fff;
+        }
+        
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+        
+        .header .title {
+            font-size: 20px;
+            opacity: 0.95;
+            margin-bottom: 30px;
+            font-weight: 400;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-size: 14px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .contact-item a {
+            color: #74b9ff;
+            text-decoration: none;
+        }
+        
+        /* Main Content */
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        /* Professional Summary */
+        .summary {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #555;
+            text-align: justify;
+        }
+        
+        /* Core Competencies */
+        .competency-category {
+            margin-bottom: 25px;
+        }
+        
+        .competency-category h3 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        
+        .skill-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-pill {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+        }
+        
+        .skill-pill.security {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        
+        .skill-pill.cloud {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+        
+        .skill-pill.devops {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+        }
+        
+        .skill-pill.leadership {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .job-header {
+            margin-bottom: 15px;
+        }
+        
+        .job-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .job-company {
+            font-size: 16px;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .job-meta {
+            font-size: 14px;
+            color: #7f8c8d;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        
+        .job-highlight {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            border-left: 3px solid #3498db;
+        }
+        
+        .job-highlight h4 {
+            font-size: 15px;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+        
+        .job ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .job li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        /* Certifications */
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .cert-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .cert-icon {
+            font-size: 32px;
+            opacity: 0.9;
+        }
+        
+        .cert-details h4 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+        
+        .cert-details p {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        /* Key Accomplishments */
+        .accomplishment {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .accomplishment-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #3498db;
+        }
+        
+        .accomplishment h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .accomplishment p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        /* Education */
+        .education-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 15px;
+        }
+        
+        .education-item h4 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .education-item .school {
+            font-size: 14px;
+            color: #3498db;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .education-item .details {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="profile-photo">
+                <img src="/images/profile.jpg" alt="Mohammed Firdouse Pasha">
+            </div>
+            <h1>Mohammed Firdouse Pasha</h1>
+            <div class="title">Digital Transformation Leader | Cloud Security Architect | DevOps Expert</div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 <a href="https://linkedin.com/in/pashafirdous">LinkedIn: pashafirdous</a>
+                </div>
+                <div class="contact-item">
+                    💻 <a href="https://github.com/pashafirdous">GitHub: pashafirdous</a>
+                </div>
+                <div class="contact-item">
+                    📍 Saudi Arabia | Available Globally
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content -->
+        <div class="content">
+            <!-- Professional Summary -->
+            <div class="section">
+                <h2 class="section-title">Professional Summary</h2>
+                <p class="summary">
+                    <strong>Digital Transformation Leader</strong> and <strong>CISSP-certified Cyber Security Expert</strong> with <strong>16+ years</strong> driving enterprise cloud transformations, security architecture, and DevOps modernization across Fortune 500 companies. Proven track record migrating <strong>150+ applications</strong>, architecting Kubernetes-native platforms, and implementing zero-trust security frameworks. Expert in AWS, Azure, GCP with hands-on delivery of <strong>$50M+ transformation programs</strong> achieving 30-40% cost optimization and enhanced security posture across US, Europe, and Middle East markets.
+                </p>
+            </div>
+            
+            <!-- Core Competencies -->
+            <div class="section">
+                <h2 class="section-title">Core Competencies</h2>
+                
+                <div class="competency-category">
+                    <h3>🔒 Security & Compliance</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill security">CISSP Certified</span>
+                        <span class="skill-pill security">Zero-Trust Architecture</span>
+                        <span class="skill-pill security">Cloud Security</span>
+                        <span class="skill-pill security">SOC Management</span>
+                        <span class="skill-pill security">Compliance (ISO 27001, SOC 2)</span>
+                    </div>
+                </div>
+                
+                <div class="competency-category">
+                    <h3>☁️ Multi-Cloud Architecture</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill cloud">AWS Solutions Architect Pro</span>
+                        <span class="skill-pill cloud">Google Cloud Architect</span>
+                        <span class="skill-pill cloud">Azure Cloud</span>
+                        <span class="skill-pill cloud">Multi-Cloud Strategy</span>
+                        <span class="skill-pill cloud">Cloud Migration (150+ Apps)</span>
+                    </div>
+                </div>
+                
+                <div class="competency-category">
+                    <h3>🐳 DevOps & Modern Infrastructure</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill devops">Kubernetes (CKA/CKAD)</span>
+                        <span class="skill-pill devops">Infrastructure as Code</span>
+                        <span class="skill-pill devops">CI/CD Pipelines</span>
+                        <span class="skill-pill devops">Docker & Containers</span>
+                        <span class="skill-pill devops">Terraform & Ansible</span>
+                    </div>
+                </div>
+                
+                <div class="competency-category">
+                    <h3>🎯 Leadership & Strategy</h3>
+                    <div class="skill-pills">
+                        <span class="skill-pill leadership">Digital Transformation</span>
+                        <span class="skill-pill leadership">Team Leadership (25+ Members)</span>
+                        <span class="skill-pill leadership">FinOps & Cost Optimization</span>
+                        <span class="skill-pill leadership">Architecture Governance</span>
+                        <span class="skill-pill leadership">Stakeholder Management</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Professional Experience -->
+            <div class="section">
+                <h2 class="section-title">Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Cyber Security Lead</div>
+                        <div class="job-company">Private Company</div>
+                        <div class="job-meta">
+                            <span>📍 Saudi Arabia</span>
+                            <span>📅 Aug 2024 - Present</span>
+                        </div>
+                    </div>
+                    <div class="job-highlight">
+                        <h4>Enterprise Security Transformation Leadership</h4>
+                        <p>Leading comprehensive security architecture and zero-trust implementation across multi-cloud infrastructure</p>
+                    </div>
+                    <ul>
+                        <li>Architecting and deploying <strong>zero-trust security framework</strong> across AWS, Azure, and GCP environments</li>
+                        <li>Establishing 24/7 Security Operations Center (SOC) with automated threat detection capabilities</li>
+                        <li>Driving security compliance initiatives achieving <strong>ISO 27001</strong> and <strong>SOC 2</strong> certifications</li>
+                        <li>Implementing cloud-native security controls reducing incident response time by 60%</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Technical Manager (Specialist Master) - Consulting</div>
+                        <div class="job-company">Deloitte Consulting</div>
+                        <div class="job-meta">
+                            <span>📍 Global</span>
+                            <span>📅 Jun 2021 - Jul 2024 · 3 yrs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="job-highlight">
+                        <h4>🏆 US Largest Insurance Client – Core Migration ($50M+ Program)</h4>
+                        <p><strong>Role:</strong> Delivery Manager & Chief Migration SME</p>
+                        <ul>
+                            <li>Led Deloitte's largest cloud migration: <strong>150+ applications to AWS</strong> in 16 months</li>
+                            <li>Managed cross-functional team of <strong>25+ engineers</strong> across multiple geographies</li>
+                            <li>Implemented Migration Factory methodology enabling parallel execution</li>
+                            <li>Achieved <strong>35% cost reduction</strong> and <strong>99.9% migration success rate</strong></li>
+                            <li>Secured $2M+ in AWS MAP credits through strategic FinOps collaboration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job-highlight">
+                        <h4>🏆 Technology & Media Client – Kubernetes Operators</h4>
+                        <p><strong>Role:</strong> Development Manager & Kubernetes SME</p>
+                        <ul>
+                            <li>Developed <strong>12 production-grade Kubernetes operators</strong> for critical applications</li>
+                            <li>Established DevOps standards and Helm templates for enterprise adoption</li>
+                            <li>Built automated CI/CD pipelines improving deployment speed from days to hours</li>
+                            <li>Achieved <strong>99.95% application availability</strong> through self-healing capabilities</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="job-highlight">
+                        <h4>🏆 Healthcare Client – ML Platform (HIPAA-Compliant)</h4>
+                        <p><strong>Role:</strong> AWS Lead & Infrastructure Architect</p>
+                        <ul>
+                            <li>Architected HIPAA-compliant AWS infrastructure for ML/AI workloads</li>
+                            <li>Implemented Infrastructure as Code using CloudFormation templates</li>
+                            <li>Built ETL pipeline processing <strong>10M+ patient records daily</strong></li>
+                            <li>Achieved <strong>40% cost optimization</strong> through auto-scaling and right-sizing</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Sr. Engineer, Cloud Operations</div>
+                        <div class="job-company">Integrated Telecom Company (ITC)</div>
+                        <div class="job-meta">
+                            <span>📍 Saudi Arabia</span>
+                            <span>📅 Jul 2016 - Nov 2018 · 2 yrs</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Established strategic cloud partnerships with Azure and AWS</li>
+                        <li>Managed VMware infrastructure supporting <strong>500+ VMs and 100+ hosts</strong></li>
+                        <li>Led Office 365 deployment for 5,000+ users</li>
+                        <li>Achieved <strong>99.9% uptime SLA</strong> for critical services</li>
+                    </ul>
+                </div>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <div class="job-title">Infrastructure Specialist</div>
+                        <div class="job-company">EF Education First</div>
+                        <div class="job-meta">
+                            <span>📍 Bangalore</span>
+                            <span>📅 May 2013 - Jun 2016 · 3 yrs</span>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Led datacenter to AWS migration: <strong>150+ VMs, 20TB data, zero downtime</strong></li>
+                        <li>Achieved <strong>30% cost reduction</strong> in first year post-migration</li>
+                        <li>Implemented CloudFormation IaC for repeatable deployments</li>
+                        <li>Established DevOps culture and security best practices</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Key Accomplishments -->
+            <div class="section">
+                <h2 class="section-title">Key Accomplishments</h2>
+                
+                <div class="accomplishment">
+                    <div class="accomplishment-icon">☁️</div>
+                    <h3>Enterprise Cloud Transformation</h3>
+                    <p>Led migration of 150+ applications to cloud achieving 35% cost reduction and improved scalability for Fortune 500 insurance client</p>
+                </div>
+                
+                <div class="accomplishment">
+                    <div class="accomplishment-icon">🔒</div>
+                    <h3>Security Excellence</h3>
+                    <p>CISSP-certified security leader implementing zero-trust architectures and achieving ISO 27001, SOC 2 compliance across enterprise environments</p>
+                </div>
+                
+                <div class="accomplishment">
+                    <div class="accomplishment-icon">👥</div>
+                    <h3>Team Leadership</h3>
+                    <p>Managed cross-functional teams of 25+ engineers across multiple geographies delivering $50M+ transformation programs</p>
+                </div>
+                
+                <div class="accomplishment">
+                    <div class="accomplishment-icon">⚙️</div>
+                    <h3>DevOps Innovation</h3>
+                    <p>Architected 12 Kubernetes operators and automated CI/CD pipelines achieving 99.95% application availability</p>
+                </div>
+            </div>
+            
+            <!-- Certifications -->
+            <div class="section">
+                <h2 class="section-title">Professional Certifications</h2>
+                <div class="cert-grid">
+                    <div class="cert-item">
+                        <div class="cert-icon">🔒</div>
+                        <div class="cert-details">
+                            <h4>CISSP</h4>
+                            <p>ISC2 | Valid: 2025-2028</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">🔶</div>
+                        <div class="cert-details">
+                            <h4>AWS Solutions Architect Pro</h4>
+                            <p>Amazon | Valid: 2023-2026</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">☁️</div>
+                        <div class="cert-details">
+                            <h4>GCP Professional Architect</h4>
+                            <p>Google Cloud | Valid: 2024-2026</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">⚙️</div>
+                        <div class="cert-details">
+                            <h4>CKA & CKAD</h4>
+                            <p>Linux Foundation | Kubernetes</p>
+                        </div>
+                    </div>
+                </div>
+                <p style="margin-top: 20px; font-size: 13px; color: #7f8c8d;">
+                    <strong>Additional:</strong> VMware VCP6, Microsoft MCSE/MCSA, AWS Developer Associate, AWS Authorized Instructor, ITIL V3
+                </p>
+            </div>
+            
+            <!-- Education -->
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h4>Master of Business Administration (MBA)</h4>
+                    <div class="school">Sikkim Manipal University</div>
+                    <div class="details">Project Management · 2013-2016 · Grade: A</div>
+                </div>
+                <div class="education-item">
+                    <h4>Bachelor of Engineering (B.E.)</h4>
+                    <div class="school">REVA University / Visvesvaraya Technological University</div>
+                    <div class="details">Electronics and Communication · 2005-2009</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
